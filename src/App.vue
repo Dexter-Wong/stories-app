@@ -2,13 +2,12 @@
   <div class="container py-4">
     <h1 class="mb-4">Stories</h1>
     <div v-for="story in stories" :key="story.id" class="card mb-3">
-      <!--Hero image links to original story page for better UX-->
       <a :href="`https://kontinentalist.com/stories/${story.slug}`" target="_blank"> 
         <img 
           :src="story.hero_image.url" 
           class="card-img-top" 
           alt="Hero Image"
-          style="width: 100%; height: 200px; object-fit: cover;"
+          style="width: 100%; object-fit: cover;"
         />
       </a>
 
